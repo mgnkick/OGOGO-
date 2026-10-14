@@ -120,9 +120,7 @@ class WifiRepository(private val context: Context) {
                 ScanResult.WIFI_STANDARD_11AX -> "Wi-Fi 6 (802.11ax)"
                 ScanResult.WIFI_STANDARD_11AC -> "Wi-Fi 5 (802.11ac)"
                 ScanResult.WIFI_STANDARD_11N -> "Wi-Fi 4 (802.11n)"
-                ScanResult.WIFI_STANDARD_11G -> "802.11g"
-                ScanResult.WIFI_STANDARD_11A -> "802.11a"
-                ScanResult.WIFI_STANDARD_11B -> "802.11b"
+                ScanResult.WIFI_STANDARD_LEGACY -> "Legacy (802.11a/b/g)"
                 else -> if (frequency > 5000) "Wi-Fi 5/6" else "Wi-Fi 4 (802.11n)"
             }
         } else {
