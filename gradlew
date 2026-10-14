@@ -73,6 +73,9 @@ if [ "$cygwin" = "false" -a "$darwin" = "false" -a "$nonstop" = "false" ] ; then
 fi
 
 APP_BASE_NAME=`basename "$0"`
+SAVED="`pwd`"
+cd "`dirname \"$0\"`/" >/dev/null
 APP_HOME="`pwd -P`"
+cd "$SAVED" >/dev/null
 
 exec "$JAVACMD" "-Dorg.gradle.appname=$APP_BASE_NAME" -classpath "$APP_HOME/$CLASSPATH" org.gradle.wrapper.GradleWrapperMain "$@"

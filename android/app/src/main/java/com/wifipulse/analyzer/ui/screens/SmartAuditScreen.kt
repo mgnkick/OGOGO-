@@ -214,7 +214,7 @@ fun AuditScoreCard(report: AuditReport) {
             }
 
             Spacer(modifier = Modifier.height(16.dp))
-            Divider(color = Color(0xFF334155), thickness = 0.5.dp)
+            HorizontalDivider(color = Color(0xFF334155), thickness = 0.5.dp)
             Spacer(modifier = Modifier.height(14.dp))
 
             // Badges row

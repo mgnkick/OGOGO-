@@ -279,7 +279,7 @@ fun DiagnosticScreen(
                                     is DiagnosticLogEntry.Summary -> {
                                         val s = entry.summary
                                         Column(modifier = Modifier.padding(vertical = 4.dp)) {
-                                            Divider(color = Color(0xFF334155))
+                                            HorizontalDivider(color = Color(0xFF334155))
                                             Text(
                                                 text = "--- Статистика: отправлено ${s.packetsTransmitted}, получено ${s.packetsReceived}, потеря ${s.packetLossPercent}% ---",
                                                 fontFamily = FontFamily.Monospace,

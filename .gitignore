@@ -24,6 +24,10 @@ android/*.iml
 android/build/
 android/captures/
 output.json
+!gradle/wrapper/gradle-wrapper.jar
+!gradle/wrapper/gradle-wrapper.properties
+!**/gradle-wrapper.jar
+!**/gradle-wrapper.properties
 
 # Python
 __pycache__/

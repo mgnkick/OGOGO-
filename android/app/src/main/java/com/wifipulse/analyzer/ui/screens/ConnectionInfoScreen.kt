@@ -156,15 +156,15 @@ fun ConnectionInfoScreen(
                         Spacer(modifier = Modifier.height(12.dp))
 
                         InfoRow(label = "IP-адрес устройства", value = details.ipAddress)
-                        Divider(modifier = Modifier.padding(vertical = 8.dp), color = MaterialTheme.colorScheme.surfaceVariant)
+                        HorizontalDivider(modifier = Modifier.padding(vertical = 8.dp), color = MaterialTheme.colorScheme.surfaceVariant)
                         InfoRow(label = "Основной шлюз (Gateway)", value = details.gateway)
-                        Divider(modifier = Modifier.padding(vertical = 8.dp), color = MaterialTheme.colorScheme.surfaceVariant)
+                        HorizontalDivider(modifier = Modifier.padding(vertical = 8.dp), color = MaterialTheme.colorScheme.surfaceVariant)
                         InfoRow(label = "Маска подсети", value = details.subnetMask)
-                        Divider(modifier = Modifier.padding(vertical = 8.dp), color = MaterialTheme.colorScheme.surfaceVariant)
+                        HorizontalDivider(modifier = Modifier.padding(vertical = 8.dp), color = MaterialTheme.colorScheme.surfaceVariant)
                         InfoRow(label = "Основной DNS 1", value = details.dns1)
-                        Divider(modifier = Modifier.padding(vertical = 8.dp), color = MaterialTheme.colorScheme.surfaceVariant)
+                        HorizontalDivider(modifier = Modifier.padding(vertical = 8.dp), color = MaterialTheme.colorScheme.surfaceVariant)
                         InfoRow(label = "Резервный DNS 2", value = details.dns2)
-                        Divider(modifier = Modifier.padding(vertical = 8.dp), color = MaterialTheme.colorScheme.surfaceVariant)
+                        HorizontalDivider(modifier = Modifier.padding(vertical = 8.dp), color = MaterialTheme.colorScheme.surfaceVariant)
                         InfoRow(label = "MAC-адрес интерфейса", value = details.macAddress)
                     }
                 }
